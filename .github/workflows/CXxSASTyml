@@ -8,8 +8,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Checkmarx Action
-      uses: checkmarx-ts/checkmarx-github-action@v1.0.6
+      uses: checkmarx-ts/checkmarx-github-action@v1.0.2
       with:
         cxServer: https://software-ag.checkmarx.net
-        cxToken: 014DF517-39D1-4453-B7B3-9930C563627C
+        cxUsername: software-agAdmin@Cx.com
+        cxPassword: P8BTcny3syZ_6%z
         cxTeam: \CxServer\SP\Checkmarx\SAG
