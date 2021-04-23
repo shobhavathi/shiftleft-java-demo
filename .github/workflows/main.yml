@@ -1,0 +1,15 @@
+name: checkmarx-ts-checkmarx-github-action
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Checkmarx Action
+      uses: checkmarx-ts/checkmarx-github-action@v1.0.2
+      with:
+        cxServer: https://software-ag.checkmarx.net
+        cxUsername: software-agAdmin@Cx.com
+        cxPassword: P8BTcny3syZ_6%z
+        cxTeam: \CxServer\SP\Checkmarx\SAG
