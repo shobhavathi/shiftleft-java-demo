@@ -26,8 +26,8 @@ jobs:
     - name: Checkmarx CxFlow Action
       uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.0
       with:
-        project: GithubActionTest
-        team: '\CxServer\SP\Checkmarx'
+        project: SAG test for GithubAction
+        team: '\CxServer\SAG-Team1'
         checkmarx_url: https://software-ag.checkmarx.net
         checkmarx_username: software-agAdmin@Cx.com
         checkmarx_password: P8BTcny3syZ_6%z
