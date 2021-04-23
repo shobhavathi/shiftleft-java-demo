@@ -27,7 +27,7 @@ jobs:
       uses: checkmarx-ts/checkmarx-github-action@v1.0.2
       with:
         project: SAG test for GithubAction
-        team: CxServer\SP\Checkmarx\SAG
+        team: \CxServer\SP\Checkmarx\SAG
         checkmarx_url: https://software-ag.checkmarx.net
         checkmarx_username: software-agAdmin@Cx.com
         checkmarx_password: P8BTcny3syZ_6%z
