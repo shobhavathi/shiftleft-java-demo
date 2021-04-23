@@ -25,12 +25,12 @@ jobs:
     - name: Checkmarx CxFlow Action
       uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.0
       with:
-        project: GithubActionTest
-        team: '\CxServer\SP\Checkmarx'
-        checkmarx_url: ${{ secrets.CHECKMARX_URL }}
-        checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
-        checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
-        checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
+        project: SAG test for GithubAction
+        team: '\CxServer\SAG-Team1'
+        checkmarx_url: https://software-ag.checkmarx.net
+        checkmarx_username: software-agAdmin@Cx.com
+        checkmarx_password: P8BTcny3syZ_6%z
+        checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C
     # Upload the Report for CodeQL/Security Alerts
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
