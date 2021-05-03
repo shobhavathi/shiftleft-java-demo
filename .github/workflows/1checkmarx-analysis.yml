@@ -33,6 +33,11 @@ jobs:
         checkmarx_username: software-agAdmin@Cx.com
         checkmarx_password: P8BTcny3syZ_6%z
         checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C
+        incremental: false
+        scanners: sast
+        params: --namespace= shobhavathi 
+                --repo-name= shiftleft-java-demo 
+                --branch= master
     # Upload the Report for CodeQL/Security Alerts
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
